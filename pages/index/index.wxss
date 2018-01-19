@@ -1,0 +1,24 @@
+page{
+  background: #efefef;
+}
+.bookList-scroll{
+  box-sizing: border-box;
+  padding: 15rpx 30rpx;
+  margin: 0px auto;
+}
+.bookList{
+  margin-bottom: 30rpx;
+  padding: 15rpx;
+  background: #fff;
+  border-radius: 5px;
+}
+.bookList text{
+  width: 100%;
+  display: block;
+  font-size: 14px;
+}
+.bookList .book-title{
+  color: #002858;
+  font-size: 16px;
+  padding-bottom: 5rpx;
+}

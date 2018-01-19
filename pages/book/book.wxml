@@ -1,0 +1,36 @@
+<view class='userInfo'>
+  <text class='welcome'>欢迎您，{{ userInfo.nickName }}</text>
+  <view class='avatarView'>
+    <image class='avatar' src="{{ userInfo.avatarUrl }}"></image>
+    <text class='singleDay'>{{ clock.date }}</text>
+    <text class='day'>
+      <text class='year'>{{ clock.year + '年' }}</text>
+      <text class="month">{{ clock.month +'月'}}</text>
+      <text class="week">{{ clock.week }}</text>
+    </text>
+  </view>
+</view>
+
+<view class='book-list'>
+  <view class='list-item leftborder'>
+    <text class='title'>1.</text>
+    <view class='item-content'>
+      <image src="http://img3m5.ddimg.cn/56/4/23761145-1_l_2.jpg"></image>
+      <view class='right'>
+          <view class='title'>人间失格</view>
+          <view class='assess'>
+            <view class='star'></view>
+            <view class='assess-cont'>35587条评论</view>
+          </view>
+          <view class='author'>作者：（日）太宰治　著，杨伟　译</view>
+          <view class='worth'>￥19.9</view>
+      </view>
+    </view>
+    <view class='collection'>
+      <view bindtap='carbook' class='carbook'>加入购物车</view>
+      <view bindtap='collection' class='follow {{ styleobj.collectionAnimate ? "animateScale" : "" }}'>收藏</view>
+    </view>
+  </view>
+</view>
+
+<view class='car'><image src="/images/car.png"></image></view>

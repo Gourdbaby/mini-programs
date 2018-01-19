@@ -1,0 +1,177 @@
+.userInfo{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 145px;
+  padding-bottom: 20rpx;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+  background: url('http://192.168.2.99:8000/static/images/indexbg.jpg');
+  color: #fff;
+  z-index: 1;
+}
+.userInfo .avatarView{
+  overflow: hidden;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30rpx;
+}
+.userInfo .avatarView .day{
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  margin-top: -36rpx;
+}
+.userInfo .avatarView .singleDay{
+  float: left;
+  font-size: 108px;
+  margin-top: -210rpx;
+}
+.userInfo .avatarView image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100px;
+  margin: 0px auto;
+}
+.userInfo text.welcome{
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 30rpx;
+}
+.userInfo image.indexbg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.book-list{
+  width: 95%;
+  margin: 160px auto;
+}
+.book-list .list-item{
+  width: 50%;
+  height: 170px;
+  box-sizing: border-box;
+  padding: 20rpx;
+  float: left;
+  border-bottom: 1px solid #ebebeb;
+}
+.book-list .leftborder{
+  border-right: 1px solid #ebebeb;
+}
+.book-list .list-item text.title{
+  display: block;
+  color: #eb0000;
+  font-size: 20px;
+}
+.item-content{
+  overflow: hidden;
+}
+.item-content image{
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+}
+.item-content view.right{
+  float: left;
+  font-size: 10px;
+  text-align: left;
+  width: calc(100% - 150rpx);
+}
+.item-content view.right view.title{
+  font-weight: bold;
+}
+.item-content view.right view.assess{
+  font-size: 0;
+}
+.item-content view.right view.assess view{
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 3rpx;
+}
+.item-content view.right view.assess view.assess-cont{
+  color: #1a66b3;
+}
+.item-content view.right view.assess view.star{
+  width: 100%;
+  height: 12px;
+  background: url(http://bang.dangdang.com/books/images/index_star.png) left bottom repeat-x
+}
+.item-content view.right view.worth{
+  color:#c30;
+  font-weight: bold;
+}
+.list-item view.collection{
+  width: 100%;
+  font-size: 0;
+  margin-top: 10rpx;
+}
+.list-item view.collection view{
+  background: #fa5000;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  padding: 5rpx 15rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+.list-item view.collection view.carbook{
+  position: relative;
+}
+.list-item view.collection view.carbook image{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 2;
+  left: 50%;
+  top: 0;
+  margin-left: -25rpx;
+  transition: all 2s cubic-bezier(.25, .1, .25, 1);
+}
+.list-item view.collection view.follow{
+  background: #00b58b;
+}
+.car{
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #002858;
+  text-align: center;
+  line-height: 40px;
+}
+.car image{
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+/** animate css **/
+.animateScale{
+  animation: scalePulse .3s ease-in;
+  
+}
+@keyframes scalePulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

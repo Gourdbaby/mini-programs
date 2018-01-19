@@ -1,0 +1,6 @@
+<view class='bookList-scroll' >
+  <view class="bookList" wx:for="{{ bookList }}" wx:for-index="index" wx:for-item="item" wx:key="{{ item.bookId }}">
+    <text class="book-title">{{ item.bookName }}</text>
+    <text class="book-desc">{{ item.bookDescription }}</text>
+  </view>
+</view>
